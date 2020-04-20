@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<link rel="stylesheet" type="text/css" href="css/bootstrap.css"/>
+		<meta charset="UTF-8" name="viewport" content="width=device-width, initial-scale=1"/>
+		<script src="converter.js"></script>
+	</head>
+<body style="background-color:#E1FF33">
+<style>
+body {
+  background-image: url('imagee.jpg');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: 100% 100%;
+}
+</style>
+		
+	<nav class="navbar navbar-default">
+		<div class="container-fluid">
+		<center>
+
+		</div>
+	</nav>
+	
+	<div class="col-md-3"></div>
+	<div class="col-md-6 well">
+	<b><h1 class="text-primary"><center><p style="color:white">CURRENCY CONVERTOR</p></center></h1></b>
+		<hr style="border-top:1px dotted #ccc;">
+		<div class="col-md-2"></div>
+		<div class="col-md-8">
+	<h3><center><p style="color:white;">CONVERTOR TYPES</p></center></h3>
+			<center><img src="imageb.jpg"></center>
+			<div class="form-group">
+        <br/><br/><br/>
+         <center>
+				<select onchange="Currency(); Calculate()" class="form-control" id="converter" style="width:20%;">
+					<option value="usd">USD</option>
+					<option value="Dollar">DOLLAR</option>
+					<option value="Pound">POUND</option>
+          	
+            <option value="Euro">EURO</option>
+            
+				</select>
+				</center>
+				<br /><br/>
+        <label for="lname"><center><b><p style="color: white;">ENTER AMOUNT:</P></b></center></label><br>
+				<center><input type="number" oninput="Calculate()" class="form-control" id="value1"/></center>
+			</div>
+			<br />
+			<div class="form-group">
+      <label for="lname"><center><p style="color:white;"><b>RUPEE VALUE:</b><p/></center></label><br>
+
+     	<center><input type="number" class="form-control" id="value2" disabled="disabled"/></center>
+			</div>
+		</div>
+		</center>
+	</div>
+</body>
+</html>
